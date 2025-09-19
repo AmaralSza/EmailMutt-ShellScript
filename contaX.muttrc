@@ -1,0 +1,27 @@
+# Nome real
+set realname = "Nome Real"
+
+# Configuração de usuário e servidor
+set from = "email_de@gmail.com"
+
+# Configuração de SMTP para envio de e-mails - Use a porta 587 para TLS/STARTTLS
+set smtp_url = "smtp://email_de@smtp.gmail.com:587/"
+
+# Senha de aplicativo do Google
+set smtp_pass = "senha"
+
+# Adiciona o cabeçalho Reply-To
+my_hdr Reply-To: responder_para@gmail.com
+
+# Configurações gerais
+# Força o uso de TLS, que é a segurança exigida pelo Gmail
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
+# Configurações de codificação (essenciais para acentuação)
+set charset = "utf-8"
+set send_charset = "utf-8"
+
+# Salvar logs de emails enviados
+#set record="/dev/null" # Não salvar
+set record="/opt/EnviaEmail/emails_enviados"
